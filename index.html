@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite with HTML,CSS AND JS</title>
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section class="container">
+        <!--Header(logo + Menu)-->
+        <section class="responsive-header">
+            <div class="container-logo">
+                <img class="logo" src="/images/aigle-removebg-preview.png" alt="">
+            </div>
+            <div class="menu">
+                <a class="active" href="#">Home</a>
+                <a class="lien" href="#">A propos</a>
+                <a  class="lien" href="#">Projets</a>
+                <a  class="lien" href="#">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </div>
+        </section>
+        <!--Slider-->
+        <section class="slider-container">
+           
+            <!-- <div class="swiper">
+             
+                <div class="swiper-wrapper">
+               
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture4.png" alt=""></div>
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture5.png" alt=""></div>
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture6.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture7.png" alt=""></div>
+             ...
+                </div>
+               
+                <div class="swiper-pagination"></div>
+            
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> -->
+            <a href="#" class="previous round" onclick="previous()">&#8249;</a>
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                  <div class="slide" id="active"><h1 class="slide-number">Vision</h1></div>
+                  <!-- <div class="slide"><h1 class="slide-number">Passion</h1></div>
+                  <div class="slide"><h1 class="slide-number">Action</h1></div> -->
+                </div>
+              </div>
+            <a href="#" class="next round" onclick="next()">&#8250;</a>
+        </section>
+        <!--Formulaire-->
+        <section class="form-container">
+
+        </section>
+        <!--Footer-->
+        <section class="footer">
+
+        </section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
