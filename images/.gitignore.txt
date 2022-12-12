@@ -1,0 +1,2 @@
+# Ignore autres folder
+autres

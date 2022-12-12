@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Slider</title>
+        <link rel="stylesheet" href="slider.css">
+        <script src="slider.js"></script>
+       </head>
+    <body>
+        <h1>Le beau slider</h1>
+        <div id="slider">
+        <img src="images/voiture4.png" alt="Ma belle voiture" id="slide">
+        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+        </div>
+
+
+
+
+        <section class="slider-container">
+           
+            <!-- <div class="swiper">
+             
+                <div class="swiper-wrapper">
+               
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture4.png" alt=""></div>
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture5.png" alt=""></div>
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture6.jpg" alt=""></div>
+                <div class="swiper-slide"><img class="slide-img" src="images/voiture7.png" alt=""></div>
+             ...
+                </div>
+               
+                <div class="swiper-pagination"></div>
+            
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div> -->
+            <a href="#" class="previous round" onclick="previous()">&#8249;</a>
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                  <div class="slide" id="active"><h1 class="slide-number">Vision</h1></div>
+                  <!-- <div class="slide"><h1 class="slide-number">Passion</h1></div>
+                  <div class="slide"><h1 class="slide-number">Action</h1></div> -->
+                </div>
+              </div>
+            <a href="#" class="next round" onclick="next()">&#8250;</a>
+        </section>
+
+    </body>
+</html>
