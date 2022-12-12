@@ -144,7 +144,7 @@ body{
   .slide {
     float: left;
     height: 510px;
-    width: 900px;
+    width: 700px;
   }
 
   .slide:nth-child(1) {
@@ -161,8 +161,9 @@ body{
   .slide-number {
     color: #000;
     text-align: center;
-    font-size: 10em;
-    margin-top: 50px;
+    font-size: 8em;
+    margin-top: 80px;
+    margin-right: 80px;
   }
 
   .slide{
