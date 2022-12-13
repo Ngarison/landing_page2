@@ -38,3 +38,65 @@
 
 
 
+
+
+/*Menu*/
+.menu{
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+    font-size: 20px;
+}
+.menu .active{
+    color: white; 
+    border: 1px solid rgb(207, 158, 12);
+    padding: 5px;
+  }
+ a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu .lien:hover{
+    color: white;
+    border: 1px solid rgb(207, 158, 12);
+    padding: 5px;
+}
+
+.icon{
+    width: 150px;
+}
+/* topnav=menu */
+.menu .icon {
+     display: none;
+  }
+  
+@media screen and (max-width: 1000px) {
+    .menu .lien {display: none;} 
+    /* .menu a:first-child{margin-right: 200px;}  */
+    .menu .icon {
+      float: right;
+      display: block;
+      margin-left: 500px;
+    
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .menu.responsive {position: relative;}
+    .menu.responsive .icon {
+      position: absolute;
+      right: -250px;
+      top: 8px;
+    }
+    .menu.responsive .lien {
+      float: none;
+      display: block;
+      text-align: left;
+      margin-top: 100px;
+    }
+     
+  }

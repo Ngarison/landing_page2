@@ -10,22 +10,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section class="container" id="container">
+<body class="container" id="container">
         <!--Header(logo + Menu)-->
         <section class="responsive-header">
             <div class="container-logo">
                 <img class="logo" src="/images/aigle-removebg-preview.png" alt="">
             </div>
-            <div class="menu">
-                <a class="active" href="#">Home</a>
-                <a class="lien" href="#">A propos</a>
-                <a  class="lien" href="#">Projets</a>
-                <a  class="lien" href="#">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                  </a>
-            </div>
+            <nav>	
+                <label class="label-menu" for="toggle" onclick="ajoutMarge()">☰</label>
+                <input type="checkbox" id="toggle">
+                <div class="main_pages" id="menuoveraly">
+                    <a href="#" class="lien">Accueil</a>
+                    <a href="#" class="lien">Actualité</a>
+                    <a href="#" class="lien" >Contact</a>
+                </div>
+            </nav>
         </section>
         <!--Slider Section-->
         <div class="slider-container">
@@ -43,15 +42,15 @@
             <div class="formulaire">
                 <div class="form">
                     <div class="div-champ">
-                        <label for="">Name</label>
+                        <label class="mes-label" for="">Name</label>
                         <input type="text" id="name" placeholder="Enter your name">
                     </div>
                     <div class="div-champ">
-                        <label for="">Email</label>
+                        <label class="mes-label" for="">Email</label>
                         <input type="email" name="email" id="email" placeholder="Enter your email">
                     </div>
                     <div class="div-champ div-textarea">
-                        <label for="">Message</label>
+                        <label class="mes-label" for="">Message</label>
                         <textarea name="" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
                     </div>
                     <!-- <input type="submit" value="Submit" class="submit" id="submit" onsubmit="envoyer()"> -->
@@ -63,7 +62,7 @@
                 </div>
 
                 <div class="affichage">
-                    <h1 class="titre-affichage">Affichage</h1>
+                    <h1 class="titre-affichage">Message</h1>
                     <div class="displayer" id="displayer">
                    
                     </div>
@@ -82,7 +81,6 @@
                 </select>
             </div>
         </section>
-    </section>
     <script src="script.js"></script>
 </body>
 </html>

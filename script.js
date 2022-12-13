@@ -1,3 +1,30 @@
+//Responsaive design
+function myFunction() {
+    var x = document.getElementById("myMenu");
+    if (x.className === "menu") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu";
+    }
+  }
+
+
+let k=1;
+  function ajoutMarge(){
+    if(k%2!=0){
+
+    document.getElementsByClassName("slider-container")[0].style.marginTop="145px";
+    document.getElementsByClassName("slider-container")[0].style.transition="all ease 0.5s";
+    document.getElementsByClassName("main_pages")[0].style. height="100px"
+    for(let h=0;h<document.getElementsByClassName("lien").length;h++){
+        document.getElementsByClassName("lien")[h].style.transition="all ease 0.5s";
+    }
+    }else{
+        document.getElementsByClassName("slider-container")[0].style.marginTop="0px";
+    }
+    k++;
+  }
+  
 
 
 var slide = new Array("images/fond1.png","images/fond2.png","images/fond3.png","images/fond4.png");
@@ -42,6 +69,10 @@ function envoyer(){
         div.innerHTML = 'Name: ' + Personjson[i].name + '<br> Email: ' + Personjson[i].email +'<br> Message:'+Personjson[i].message;+'<br><br>'
         document.getElementById("displayer").appendChild(div);
 }
+     //Vider les champs après l'envoi de donnée
+     name = document.getElementById("name").value="";
+     email = document.getElementById("email").value=""
+     message = document.getElementById("message").value="";
 }
 
 
